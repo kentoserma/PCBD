@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>生産管理板 ログイン画面</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header class="page-header">
+        <a href="/"><img class="logo" src="/static/images/logo.png" alt="Deltusロゴ"></a>
+        <div class="title">生産管理板</div>
+        <div class="month">{{ this_month }}月</div>
+    </header>
+
+    <!-- サブタイトルを表示 -->>
+    <h1 class="sub_title">ログイン画面</h1>
+
+    <!-- [GET]で入力されたラインNOをpcbd.htmlに送る -->
+    <form action="/pcbd" method="get" class="login">
+        <table class="login" align="center">
+            <tr>
+                <td>ラインNo</td>
+                <td><input type="text" name="line_no"></td>
+            </tr>
+        </table>
+        <input type="submit" class="submit" value="ログイン">
+    </form>
+
+</body>
+</html>
