@@ -1,7 +1,10 @@
 /*----------------------------------------------------------------*/
 /*画面全体                                                        */
 /*----------------------------------------------------------------*/
-body {
+html,body {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
     background: #c2edff;
 }
@@ -10,8 +13,8 @@ body {
 /*ヘッダー                                                        */
 /*----------------------------------------------------------------*/
 .page-header {
-    background: #004C98;
     position: fixed;
+    background: #004C98;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,8 +24,8 @@ body {
 
 .logo {
     /*画像の比率を維持したままサイズ変更*/
-    width: 200px;
     position: absolute;
+    width: 200px;
     top: 20%;
     left: 5%;
 }
@@ -46,6 +49,15 @@ body {
 }
 
 /*----------------------------------------------------------------*/
+/*Deltusマーク                                                    */
+/*----------------------------------------------------------------*/
+.mark {
+    zoom: 100%;
+    width: 50px;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------*/
 /*サブタイトル                                                    */
 /*----------------------------------------------------------------*/
 .sub_title{
@@ -57,13 +69,22 @@ body {
 /*----------------------------------------------------------------*/
 /*ログインフォーム                                                */
 /*----------------------------------------------------------------*/
+.login {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
 form {
-    text-align: center;
+
     font-size: 150%;
+
 }
 
 .submit{
-    text-align: center;
+
     margin: 20px;
     padding: 10px;
 }

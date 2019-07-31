@@ -10,24 +10,34 @@
 
     <!-- ヘッダー -->
     <header class="page-header">
-        <a href="/"><img class="logo" src="/static/images/logo.png" alt="Deltusロゴ"></a>
+        <a href="/"><img class="logo" src="/static/images/logo.png" alt="Deltusロゴ" /></a>
         <div class="title">生産管理板</div>
         <div class="month">{{ this_month }}月</div>
     </header>
 
-    <!-- サブタイトルを表示 -->>
-    <h1 class="sub_title">ログイン画面</h1>
-
-    <!-- [GET]で入力されたラインNOをpcbd.htmlに送る -->
-    <form action="/pcbd" method="get" class="login">
-        <table class="login" align="center">
+    <!-- Deltusマークを表示 -->
+    <div align="center">
+        <table cellspacing="0" cellpadding="10" border="0" align="center">
             <tr>
-                <td>ラインNo</td>
-                <td><input type="text" name="line_no"></td>
+                <td><a href="/"><img class="mark" src="/static/images/mark.jpg" alt="Deltusマーク"></a></td>
             </tr>
         </table>
-        <input type="submit" class="submit" value="ログイン">
-    </form>
+    </div>
+
+    <!--入力されたラインNOを[GET]でpcbd.htmlに送る -->
+    <div class="login" align="center">
+        <div class="sub_title"><b>ログイン画面</b></div>
+        <form action="/pcbd" method="get">
+            <table class="login">
+                <tr>
+                    <td>ラインNo</td>
+                    <td><input type="text" name="line_no"></td>
+                </tr>
+            </table>
+            <input type="submit" class="submit" value="ログイン" >
+        </form>
+    </div>
+
 
 </body>
 </html>
