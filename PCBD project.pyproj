@@ -26,8 +26,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="static\css\style.css" />
-    <Content Include="static\css\Style2.css" />
+    <Content Include="static\css\%28test%29style.css" />
+    <Content Include="static\css\style_pcbd.css" />
     <Content Include="static\images\logo.png" />
+    <Content Include="static\images\mark.jpg" />
     <Content Include="templates\ApplicationPage.html" />
     <Content Include="templates\pcbd.html" />
     <Content Include="templates\index.html" />
