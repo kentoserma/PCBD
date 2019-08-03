@@ -93,6 +93,14 @@ table td {
     padding: 10px 0;
     }
 
-ul{
-    display: table-cell;
+
+
+
+
+
+table.notes {
+    border-collapse: separate;
+    border-spacing: 5px;
+    width: 100%;
 }
+
