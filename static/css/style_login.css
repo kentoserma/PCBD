@@ -80,7 +80,7 @@ html,body {
 .login{
     background-color: #fff;
     width: 100%;
-    margin: 10px auto;
+    margin: 0px auto;
     border-top: solid 5px #5d627b;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
@@ -103,4 +103,10 @@ html,body {
 .submit:active {
     transform: translateY(4px);
     border-bottom: none;
+}
+
+.error_message{
+  font-size: 7px;
+  padding: 0px 0px 0px 60px;
+  color: #FF3300;
 }
