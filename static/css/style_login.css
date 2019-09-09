@@ -60,7 +60,7 @@
 
 .submit:active {
     transform: translateY(4px);
-    border-bottom: none;
+    border-bottom: 4px solid #003366;
 }
 
 .error_message{
