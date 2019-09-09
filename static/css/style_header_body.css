@@ -24,6 +24,7 @@ html,body {
     width: 200px;
     top: 20%;
     left: 5%;
+    z-index: 2  /* 前面に出す */
 }
 
 .title {
