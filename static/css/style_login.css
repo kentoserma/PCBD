@@ -1,49 +1,7 @@
 /*----------------------------------------------------------------*/
-/*���ʑS��                                                        */
+/*ヘッダー、ボディーのインポート                                     */
 /*----------------------------------------------------------------*/
-html,body {
-    font-family: 'Hiragino Kaku Gothic ProN', '�q���M�m�p�S ProN W3', Meiryo, ���C���I, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-    background: #c2edff;
-}
-
-/*----------------------------------------------------------------*/
-/*�w�b�_�[                                                        */
-/*----------------------------------------------------------------*/
-.page-header {
-    position: fixed;
-    background: #004C98;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 10;
-}
-
-.logo {
-    /*�摜�̔䗦���ێ������܂܃T�C�Y�ύX*/
-    position: absolute;
-    width: 200px;
-    top: 20%;
-    left: 5%;
-}
-
-.title {
-    position: relative;
-    top: 20%;
-    font-size: 150%;
-    letter-spacing: 2em;
-    color: #ffffff;
-    text-align: center;
-}
-
-.month {
-    position: relative;
-    font-size: 150%;
-    bottom: 27px;
-    letter-spacing: 2em;
-    color: #ffffff;
-    text-align: right;
-}
+@import url("style_header_body.css");
 
 /*----------------------------------------------------------------*/
 /*コンテンツ全体                                                   */
