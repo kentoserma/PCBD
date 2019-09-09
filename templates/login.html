@@ -29,7 +29,7 @@
         <form id="login_form_1">
           <!-- ラインＮＯ未入力時のエラー表示 -->
           <div class="error_message">
-            <div id="error_message_line_no"></div>
+            <div id="error_message_line_no">　</div> <!-- 初期値でスペースが入力されている -->
           </div>
           <p>ラインNo： <input type="text" name="line_no" id="line_no"></p>
           <p><input type="submit" class="submit" value="ログイン" onclick="return OnButtonClickLineNo();" ></p>
@@ -42,14 +42,14 @@
       <form id="login_form_2">
         <!-- ログインＩＤ・パスワード未入力時のエラー表示 -->
         <div class="error_message">
-          <div id="error_message_login_master"></div>
+          <div id="error_message_login_master">　</div> <!-- 初期値でスペースが入力されている -->
         </div>
         <p>ログインＩＤ： <input type="text" name="login_id" id="login_id"></p>
         <p>パスワード　 : <input type="password" name="password" id="password"></p>
         <p><input type="submit" class="submit" value="ログイン" onclick="return OnButtonClickLoginMaster();"></p>
       </form>
     </div>
-  </div>
+</div>
 
 </body>
 </html>
