@@ -4,19 +4,84 @@
 <head>
     <meta charset="utf-8">
     <title>生産管理板 ログイン画面</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/style_pcbd.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style_pcbd.css">
 </head>
 <body>
 
     <!-- ヘッダー -->
     <header class="page-header">
-        <a href="/"><img class="logo" src="/static/images/logo.png" alt="Deltusロゴ" /></a>
+        <a href="login.html"><img class="logo" src="../static/images/logo.png" alt="Deltusロゴ" /></a>
         <div class="title">生産管理板</div>
-        <div class="month">{{ this_month }}月</div>
+        <div class="month">ラインＮＯ</div>
     </header>
 
+    <!-- テーブル -->
+    <div class="table">
+
+    <!-- 凡例の表（前半） -->
+      <div id="table1">
+              <table>
+                  <tr>
+                      <th>必要人工</th>
+                  </tr>
+                  <tr>
+                      <td>4.0人</td>
+                  </tr>
+                  <tr>
+                      <th>編成人工</th>
+                  </tr>
+                  <tr>
+                      <td>4人</td>
+                  </tr>
+                  <tr>
+                      <th>月度オーダー</th>
+                  </tr>
+                  <tr>
+                      <td>20250台</td>
+                  </tr>
+                  <tr>
+                      <th>稼働日</th>
+                  </tr>
+                  <tr>
+                      <td>23日</td>
+                  </tr>
+              </table>
+      </div>
+
+      <!-- 凡例の表（後半） -->
+        <div id="table2">
+                <table>
+                    <tr>
+                        <th colspan="3">日当たり必要数</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">890台</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">実行タクトタイム</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">32.1 秒</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">前月作業能率</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">1052</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">加重平均</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                    </tr>
+                </table>
+        </div>
+
     <!-- 時間帯・必要数の表 -->
-    <div id="table">
+    <div id="table3">
         <table>
             <tr>
                 <th>時間帯</th>
@@ -71,7 +136,7 @@
 
 
     <!-- 本日の生産数の表 -->
-    <div id="table">
+    <div id="table4">
         <table>
             <tr>
                 <th>本日</th>
@@ -126,7 +191,7 @@
 
 
     <!-- 前回の生産数の表 -->
-    <div id="table">
+    <div id="table5">
         <table>
             <tr>
                 <th>前日</th>
@@ -179,74 +244,15 @@
             </tr>
         </table>
     </div>
+  </div>
 
-
-    <!-- 凡例の表 -->
-    <div id="table">
-        <div>
-            <table>
-                <tr class="hanrei">
-                    <th>必要人工</th>
-
-                </tr>
-                <tr class="hanrei">
-                    <td>4.0人</td>
-                </tr>
-                <tr class="hanrei">
-                    <th>編成人工</th>
-                </tr>
-                <tr class="hanrei">
-                    <td>4人</td>
-                </tr>
-                <tr class="hanrei">
-                    <th>月度オーダー</th>
-                </tr>
-                <tr class="hanrei">
-                    <td>20250台</td>
-                </tr>
-                <tr class="hanrei">
-                    <th>稼働日</th>
-                </tr>
-                <tr class="hanrei">
-                    <td>23日</td>
-                </tr>
-                <tr class="hanrei">
-                    <th>日当たり必要数</th>
-                </tr>
-                <tr class="hanrei">
-                    <td>890台</td>
-                </tr>
-                <tr class="hanrei">
-                    <th>実行タクトタイム</th>
-                </tr>
-                <tr class="hanrei">
-                    <td>32.1 秒</td>
-                </tr>
-                <tr class="hanrei">
-                    <th>前月作業能率</th>
-                </tr>
-                <tr class="hanrei">
-                    <td>1052</td>
-                </tr>
-                <tr class="hanrei">
-                    <th>加重平均</th>
-                </tr>
-            </table>
-        </div>
+  <!-- 表示用フレーム -->
+    <div id="tact_time">
+      <p>タクトタイム</p>
     </div>
-
-
-    <!-- 各種ボタン -->
-    <div id="table">
-        <ul>
-            <li class="bottun_list"><button type="button">リスタート</button></li>
-            <li class="bottun_list"><button type="button">リスタート</button></li>
-            <li class="bottun_list"><button type="button">リスタート</button></li>
-            <li class="bottun_list"><button type="button">リスタート</button></li>
-        </ul>
+    <div id="on_out">
+      <p>稼働状況</p>
     </div>
-
-
 
 </body>
 </html>

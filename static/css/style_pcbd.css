@@ -1,76 +1,29 @@
 /*----------------------------------------------------------------*/
-/*��ʑS��                                                        */
+/*ヘッダー、ボディーのインポート                                     */
 /*----------------------------------------------------------------*/
-html, body {
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Hiragino Kaku Gothic ProN', '�q���M�m�p�S ProN W3', Meiryo, ���C���I, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-    background: #c2edff;
-}
-
+@import url("style_header_body.css");
 
 /*----------------------------------------------------------------*/
-/*�w�b�_�[                                                        */
+/*テーブル       　                                                */
 /*----------------------------------------------------------------*/
-.page-header {
-    position: fixed;
-    background: #004C98;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 10;
+#table1{
+  font-size: 20px;
 }
 
-.logo {
-    /*�摜�̔䗦���ێ������܂܃T�C�Y�ύX*/
-    position: absolute;
-    width: 200px;
-    top: 20%;
-    left: 5%;
-}
-
-.title {
-    position: relative;
-    top: 20%;
-    font-size: 150%;
-    letter-spacing: 2em;
-    color: #ffffff;
-    text-align: center;
-}
-
-.month {
-    position: relative;
-    font-size: 150%;
-    bottom: 27px;
-    letter-spacing: 2em;
-    color: #ffffff;
-    text-align: right;
-}
-
-
-/*----------------------------------------------------------------*/
-/*�e�[�u��                                                    �@  */
-/*----------------------------------------------------------------*/
-#table{
-    float: left;
-}
-table {
+#table1 table{
     border-collapse: collapse;
-    margin:60px 10px 10px 15px;
 }
 
-table th:first-child {
+#table1 table th:first-child {
     border-radius: 5px 0 0 0;
 }
 
-table th:last-child {
+#table1 th:last-child {
     border-radius: 0 5px 0 0;
     border-right: 1px solid #3c6690;
 }
 
-table th {
+#table1 th {
     text-align: center;
     color: white;
     background: linear-gradient(#829ebc,#225588);
@@ -78,29 +31,219 @@ table th {
     border-top: 1px solid #3c6690;
     border-bottom: 1px solid #3c6690;
     box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
-    width: 35%;
-    padding: 10px 0;
-    }
+    padding: 15px;
+}
 
-table td {
+#table1 td {
     background: #ffffff;
     text-align: center;
     border-left: 1px solid #a8b7c5;
     border-bottom: 1px solid #a8b7c5;
     border-top: none;
     box-shadow: 0px -3px 5px 1px #eee inset;
-    width: 35%;
-    padding: 10px 0;
-    }
-
-
-
-
-
-
-table.notes {
-    border-collapse: separate;
-    border-spacing: 5px;
-    width: 100%;
+    padding: 15px;
 }
 
+/*----------------------------------------------------------------*/
+/*テーブル2                                                        */
+/*----------------------------------------------------------------*/
+#table2{
+  font-size: 20px;
+}
+
+#table2 table{
+    border-collapse: collapse;
+}
+
+#table2 table th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+#table2 th:last-child {
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #3c6690;
+}
+
+#table2 th {
+    text-align: center;
+    color: white;
+    background: linear-gradient(#829ebc,#225588);
+    border-left: 1px solid #3c6690;
+    border-top: 1px solid #3c6690;
+    border-bottom: 1px solid #3c6690;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    padding: 15px;
+}
+
+#table2 td {
+    background: #ffffff;
+    text-align: center;
+    border-left: 1px solid #a8b7c5;
+    border-bottom: 1px solid #a8b7c5;
+    border-top: none;
+
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    padding: 15px;
+}
+
+/*----------------------------------------------------------------*/
+/*テーブル3                                                        */
+/*----------------------------------------------------------------*/
+#table3{
+    font-size: 20px;
+}
+
+#table3 table{
+    border-collapse: collapse;
+}
+
+#table3 table th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+#table3 th:last-child {
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #3c6690;
+}
+
+#table3 th {
+    text-align: center;
+    color: white;
+    background: linear-gradient(#829ebc,#225588);
+    border-left: 1px solid #3c6690;
+    border-top: 1px solid #3c6690;
+    border-bottom: 1px solid #3c6690;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    padding: 13px 30px;
+}
+
+#table3 td {
+    background: #ffffff;
+    text-align: center;
+    border-left: 1px solid #a8b7c5;
+    border-bottom: 1px solid #a8b7c5;
+    border-top: none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    padding: 13px 30px;
+}
+
+/*----------------------------------------------------------------*/
+/*テーブル4                                                        */
+/*----------------------------------------------------------------*/
+#table4{
+    font-size: 20px;
+}
+
+#table4 table{
+    border-collapse: collapse;
+}
+
+#table4 table th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+#table4 th:last-child {
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #3c6690;
+}
+
+#table4 th {
+    text-align: center;
+    color: white;
+    background: linear-gradient(#829ebc,#225588);
+    border-left: 1px solid #3c6690;
+    border-top: 1px solid #3c6690;
+    border-bottom: 1px solid #3c6690;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    padding: 13px 60px;
+}
+
+#table4 td {
+    background: #ffffff;
+    text-align: center;
+    border-left: 1px solid #a8b7c5;
+    border-bottom: 1px solid #a8b7c5;
+    border-top: none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    padding: 13px 60px;
+}
+
+/*----------------------------------------------------------------*/
+/*テーブル5      　                                                */
+/*----------------------------------------------------------------*/
+#table5{
+    font-size: 20px;
+}
+
+#table5 table{
+    border-collapse: collapse;
+}
+
+#table5 table th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+#table5 th:last-child {
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #3c6690;
+}
+
+#table5 th {
+    text-align: center;
+    color: white;
+    background: linear-gradient(#829ebc,#225588);
+    border-left: 1px solid #3c6690;
+    border-top: 1px solid #3c6690;
+    border-bottom: 1px solid #3c6690;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    padding: 13px 60px;
+}
+
+#table5 td {
+    background: #ffffff;
+    text-align: center;
+    border-left: 1px solid #a8b7c5;
+    border-bottom: 1px solid #a8b7c5;
+    border-top: none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    padding: 13px 60px;
+}
+
+/*----------------------------------------------------------------*/
+/*テーブル全体                                                     */
+/*----------------------------------------------------------------*/
+table {
+  overflow: hidden;
+  border-collapse: collapse;
+  margin: 60px 10px 10px 15px;
+  float:left;
+}
+
+/*----------------------------------------------------------------*/
+/*表示用フレーム                                                 */
+/*----------------------------------------------------------------*/
+#tact_time{
+ /* window枠の絶対値によりフレーム位置を決定する */
+ position: fixed;
+ font-size: 30px;
+ margin:550px 0px 0px 40px;
+ clear:both;
+ width: 300px; height: 100px;
+ border: solid #000000;
+ text-align: center;
+ background-color:#FFFFFF;
+ font-weight: 800;
+}
+
+#on_out{
+ /* window枠の絶対値によりフレーム位置を決定する */
+ position: fixed;
+ font-size: 30px;
+ margin:680px 0px 0px 40px;
+ clear:both;
+ width: 300px; height: 100px;
+ border: solid #000000;
+ text-align: center;
+ background-color:#FFFFFF;
+ font-weight: 800;
+}
