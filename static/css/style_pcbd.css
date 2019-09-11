@@ -7,7 +7,6 @@
 /*テーブル       　                                                */
 /*----------------------------------------------------------------*/
 #table1{
-  font-size: 20px;
 }
 
 #table1 table{
@@ -48,7 +47,6 @@
 /*テーブル2                                                        */
 /*----------------------------------------------------------------*/
 #table2{
-  font-size: 20px;
 }
 
 #table2 table{
@@ -81,7 +79,6 @@
     border-left: 1px solid #a8b7c5;
     border-bottom: 1px solid #a8b7c5;
     border-top: none;
-
     box-shadow: 0px -3px 5px 1px #eee inset;
     padding: 15px;
 }
@@ -90,7 +87,6 @@
 /*テーブル3                                                        */
 /*----------------------------------------------------------------*/
 #table3{
-    font-size: 20px;
 }
 
 #table3 table{
@@ -131,7 +127,6 @@
 /*テーブル4                                                        */
 /*----------------------------------------------------------------*/
 #table4{
-    font-size: 20px;
 }
 
 #table4 table{
@@ -172,7 +167,6 @@
 /*テーブル5      　                                                */
 /*----------------------------------------------------------------*/
 #table5{
-    font-size: 20px;
 }
 
 #table5 table{
@@ -213,6 +207,7 @@
 /*テーブル全体                                                     */
 /*----------------------------------------------------------------*/
 table {
+  font-size: 20px;
   overflow: hidden;
   border-collapse: collapse;
   margin: 60px 10px 10px 15px;
@@ -220,16 +215,17 @@ table {
 }
 
 /*----------------------------------------------------------------*/
-/*表示用フレーム                                                 */
+/*表示用フレーム                                                   */
 /*----------------------------------------------------------------*/
 #tact_time{
  /* window枠の絶対値によりフレーム位置を決定する */
  position: fixed;
- font-size: 30px;
- margin:550px 0px 0px 40px;
+ font-size: 40px;
+ margin:570px 0px 0px 40px;
  clear:both;
- width: 300px; height: 100px;
+ width: 300px;
  border: solid #000000;
+ border-width: thick;
  text-align: center;
  background-color:#FFFFFF;
  font-weight: 800;
@@ -238,12 +234,68 @@ table {
 #on_out{
  /* window枠の絶対値によりフレーム位置を決定する */
  position: fixed;
- font-size: 30px;
- margin:680px 0px 0px 40px;
+ font-size: 40px;
+ margin:760px 0px 0px 40px;
  clear:both;
- width: 300px; height: 100px;
+ width: 300px;
  border: solid #000000;
+ border-width: thick;
  text-align: center;
  background-color:#FFFFFF;
  font-weight: 800;
+}
+
+/*----------------------------------------------------------------*/
+/*各種ボタン                                                       */
+/*----------------------------------------------------------------*/
+.button{
+  clear: both;
+  color: #FFF;
+  text-decoration: none;
+  font-size:30px;
+}
+
+#stop{
+  display: inline-block;
+  padding: 0.2em 5em;
+  background: #668ad8;/*ボタン色*/
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin: 35px 0 0 420px;
+  padding:0 50px;
+}
+
+#stop:active {
+    transform: translateY(4px);
+    border-bottom: 4px solid #003366;
+}
+
+#restart{
+  display: inline-block;
+  padding: 0.2em 5em;
+  background: #668ad8;/*ボタン色*/
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin: 35px 0 0 60px;
+  padding:0 50px;
+}
+
+#restart:active {
+  transform: translateY(4px);
+  border-bottom: 4px solid #003366;
+}
+
+#reflect{
+  display: inline-block;
+  padding: 0.2em 5em;
+  background: #668ad8;/*ボタン色*/
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin: 35px 0 0 60px;
+  padding:0 50px;
+}
+
+#reflect:active {
+  transform: translateY(4px);
+  border-bottom: 4px solid #003366;
 }

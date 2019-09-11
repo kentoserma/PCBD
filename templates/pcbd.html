@@ -8,6 +8,9 @@
 </head>
 <body>
 
+  <!-- JavaScriptファイルの読み込み -->
+  <script src="../static/js/pcbd.js"></script>
+
     <!-- ヘッダー -->
     <header class="page-header">
         <a href="login.html"><img class="logo" src="../static/images/logo.png" alt="Deltusロゴ" /></a>
@@ -247,12 +250,29 @@
   </div>
 
   <!-- 表示用フレーム -->
-    <div id="tact_time">
-      <p>タクトタイム</p>
+  <div id="tact_time">
+    <p id="tact_time_js">タクトタイム</p>
+  </div>
+  <div id="on_out">
+    <p id="on_out_js">稼働状況</p>
+  </div>
+
+  <!-- 各種ボタン -->
+  <div class="button">
+
+    <div id="stop" onclick="OnButtonClickOut()">
+      <p>stop</p>
     </div>
-    <div id="on_out">
-      <p>稼働状況</p>
+
+    <div id="restart" onclick="OnButtonClickOn()">
+      <p>restart</p>
     </div>
+
+    <div id="reflect">
+      <p>OK</p>
+    </div>
+
+  </div>
 
 </body>
 </html>
