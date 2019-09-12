@@ -219,7 +219,7 @@ table {
 /*----------------------------------------------------------------*/
 #tact_time{
  /* window枠の絶対値によりフレーム位置を決定する */
- position: fixed;
+ position: absolute;
  font-size: 40px;
  margin:570px 0px 0px 40px;
  clear:both;
@@ -233,7 +233,7 @@ table {
 
 #on_out{
  /* window枠の絶対値によりフレーム位置を決定する */
- position: fixed;
+ position: absolute;
  font-size: 40px;
  margin:760px 0px 0px 40px;
  clear:both;
@@ -243,6 +243,19 @@ table {
  text-align: center;
  background-color:#FFFFFF;
  font-weight: 800;
+}
+
+#prodction_frame{
+  position: absolute;
+  font-size: 40px;
+  margin:760px 0px 0px 1230px;
+  clear:both;
+  width: 400px;
+  border: solid #000000;
+  border-width: thick;
+  text-align: center;
+  background-color:#FFFFFF;
+  font-weight: 800;
 }
 
 /*----------------------------------------------------------------*/
