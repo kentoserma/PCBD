@@ -299,3 +299,33 @@ table {
   transform: translateY(4px);
   border-bottom: 4px solid #003366;
 }
+
+#plus{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #668ad8;
+}
+
+#plus:active {
+  transform: translateY(4px);
+  border-bottom: 50px solid #003366;
+}
+
+#minus{
+  position:absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #668ad8;
+  left:1080px;
+  top:820px;
+}
+
+#minus:active {
+  transform: translateY(4px);
+  border-top: 50px solid #003366;
+}
