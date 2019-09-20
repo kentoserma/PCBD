@@ -146,47 +146,47 @@
                 <th>問題点</th>
             </tr>
             <tr>
-                <td  class="day_prodction" onclick="BorderChange()">112 /  112</td>
+                <td><input type="text"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
             <tr>
-                <td>112 /  112</td>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
             <tr>
-                <td>112 /  112</td>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
             <tr>
-                <td>112 /  112</td>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
             <tr>
-                <td>112 /  112</td>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
             <tr>
-                <td>112 /  112</td>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
             <tr>
-                <td>112 /  112</td>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
             <tr>
-                <td>112 /  112</td>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
             <tr>
-                <td>112 /  112</td>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
             <tr>
-                <td>112 /  112</td>
-                <td>          </td>
-            </tr>
-            <tr>
-                <td>112 /  112</td>
+                <td><input type="text"></td>
                 <td>          </td>
             </tr>
         </table>
@@ -253,28 +253,34 @@
   <div id="tact_time">
     <p id="tact_time_js">タクトタイム</p>
   </div>
+
   <div id="on_out">
     <p id="on_out_js">稼働状況</p>
   </div>
+
   <div id="prodction_frame">
-    <p>製品品番</p>
+    <p id="prodction_frame_js">製品品番</p>
   </div>
 
-  <!-- 各種ボタン・フレーム -->
+  <!-- 各種ボタン -->
   <div class="button">
 
-    <div id="stop" onclick="OnButtonClickOut()">
+    <!-- ストップボタン -->
+    <div id="stop" onclick="OnButtonClickStop()">
       <p>stop</p>
     </div>
 
-    <div id="restart" onclick="OnButtonClickOn()">
+    <!-- リスタートボタン -->
+    <div id="restart" onclick="OnButtonClickRestart()">
       <p>restart</p>
     </div>
 
+    <!-- OKボタン -->
     <div id="reflect">
       <p>OK</p>
     </div>
 
+    <!-- プラス・マイナスボタン -->
     <p id="plus"></p>
     <p id="minus"></p>
 

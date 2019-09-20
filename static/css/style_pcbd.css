@@ -160,7 +160,29 @@
     border-bottom: 1px solid #a8b7c5;
     border-top: none;
     box-shadow: 0px -3px 5px 1px #eee inset;
-    padding: 13px 60px;
+    padding: 12px 1px;
+}
+
+#table4 td:hover{
+  background: #ececd9;
+  cursor: pointer;
+}
+
+#table4 td input {
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#table4 td input {
+    border: solid 0px;
+    background-color: transparent;
+    text-align: center;
+}
+
+#table4 td input:hover {
+    border: solid 0px;
+    background-color: #ececd9;
 }
 
 /*----------------------------------------------------------------*/
@@ -203,6 +225,7 @@
     padding: 13px 60px;
 }
 
+
 /*----------------------------------------------------------------*/
 /*テーブル全体                                                     */
 /*----------------------------------------------------------------*/
@@ -213,6 +236,7 @@ table {
   margin: 60px 10px 10px 15px;
   float:left;
 }
+
 
 /*----------------------------------------------------------------*/
 /*表示用フレーム                                                   */
