@@ -1,0 +1,192 @@
+﻿/*----------------------------------------------------------------*/
+/*メインコンテンツ                                                */
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*メイン                                                          */
+/*----------------------------------------------------------------*/
+/* 初期化 */
+.main {
+    margin: 0;
+    padding: 0;
+}
+
+/*戻るボタン*/
+#backButton {
+    border-bottom: solid #008080;
+    margin-bottom: 10px;
+}
+
+.back {
+    width: 80px;
+    height: 35px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+/*----------------------------------------------------------------*/
+/* 追加 */
+
+/*変更・削除ボタン*/
+#ChangeTable {
+    font-size: 30px;
+    margin: 2px;
+    border-bottom: solid #008080;
+    margin-bottom: 20px;
+}
+
+#changeButton, #deleteButton {
+    display: inline-block;
+    margin: 10px;
+}
+
+    #changeButton label, #deleteButton label {
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+/*----------------------------------------------------------------*/
+/* 追加 */
+#UpdateTable {
+    font-size: 30px;
+    margin: 2px;
+}
+/*ボタンデザイン共通*/
+.btn {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #258;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 4px;
+    border-style: none;
+    position: relative;
+}
+
+    .btn:before {
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 50%;
+        margin-top: -8px;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+
+/*横スクロール*/
+.masterTable {
+    margin-left: 10px; /*テーブルの外枠の余白を調整*/
+    margin-right: 10px; /*テーブルの外枠の余白を調整*/
+    overflow-x: scroll; /*横スクロールに変更*/
+    white-space: nowrap; /*改行せず横並びにする*/
+    height: 120px;
+    border: solid #E5E5E5; /*枠線を設定*/
+}
+
+    /* テーブルデザイン */
+    .masterTable table {
+        width: 100%;
+        border-spacing: 0;
+        font-size: 14px;
+    }
+
+        .masterTable table th {
+            min-width: 70px;
+            color: #fff;
+            padding: 8px 15px;
+            background: #258;
+            background: -moz-linear-gradient(rgba(34,85,136,0.7), rgba(34,85,136,0.9) 50%);
+            background: -webkit-gradient(linear, 100% 0%, 100% 50%, from(rgba(34,85,136,0.7)), to(rgba(34,85,136,0.9)));
+            font-weight: bold;
+            border-left: 1px solid #258;
+            border-top: 1px solid #258;
+            border-bottom: 1px solid #258;
+            line-height: 120%;
+            text-align: center;
+            text-shadow: 0 -1px 0 rgba(34,85,136,0.9);
+            box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+        }
+
+            .masterTable table th:first-child {
+                border-radius: 5px 0 0 0;
+            }
+
+            .masterTable table th:last-child {
+                border-radius: 0 5px 0 0;
+                border-right: 1px solid #258;
+                box-shadow: 2px 2px 1px rgba(0,0,0,0.1),0px 1px 1px rgba(255,255,255,0.3) inset;
+            }
+
+        .masterTable table tr td {
+            /*padding: 8px 15px;*/
+            border-bottom: 1px solid #84b2e0;
+            border-left: 1px solid #84b2e0;
+            text-align: center;
+        }
+
+            .masterTable table tr td:last-child {
+                border-right: 1px solid #84b2e0;
+                box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+            }
+
+        .masterTable table tr {
+            background: #fff;
+        }
+
+            .masterTable table tr:nth-child(2n+1) {
+                background: #f1f6fc;
+            }
+
+            .masterTable table tr:last-child td {
+                box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+            }
+
+                .masterTable table tr:last-child td:first-child {
+                    border-radius: 0 0 0 5px;
+                }
+
+                .masterTable table tr:last-child td:last-child {
+                    border-radius: 0 0 5px 0;
+                }
+
+            .masterTable table tr:hover {
+                background: #bbd4ee;
+                cursor: pointer;
+            }
+
+        .masterTable table td:hover {
+            background: #ececd9;
+            cursor: pointer;
+        }
+
+    /* レコード */
+    .masterTable td input {
+        height: 30px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .masterTable td input {
+        border: solid 0px;
+        background-color: transparent;
+        text-align: center;
+    }
+
+        .masterTable td input:hover {
+            border: solid 0px;
+            background-color: #ececd9;
+        }
+
+/*追加ボタン*/
+#addButton {
+    margin: 10px;
+}
+
+    #addButton label {
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+    }
