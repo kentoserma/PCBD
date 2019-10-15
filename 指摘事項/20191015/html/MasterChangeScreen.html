@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>マスタ変更画面</title>
+
+    <!-- jQuery -->
+    <!--<script src="../JavaScript/jQuery3.4.1.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css">-->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css">
+
+    <script src="../js/jquery.mousewheel.min.js" charset="utf-8"></script>
+    <script src="../js/horizontalScroll.js" charset="utf-8"></script>
+    <script src="../js/masterTable.js" charset="utf-8"></script>
+    <script src="../js/inputControl.js" charset="utf-8"></script>
+    <script src="../js/button.js" charset="utf-8"></script>
+    <!--<link rel="stylesheet" type="text/css" href="../css/common.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../css/sideBar.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../css/main.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../css/masterTable.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../css/button.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../css/confirmScreen.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/bodyLayout.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/MainContent-SideBar.css">
+    <link rel="stylesheet" type="text/css" href="../css/MainContent-Main.css">
+</head>
+<body>
+    <div id="pageBody">
+
+        <!--ヘッダー-->
+        <header>
+            <img src="../img/logo-white.png">
+            <h1>生産ラインNOマスタ</h1>
+            <h2>ID : 99999</h2>
+        </header>
+
+        <!-- メインコンテンツ -->
+        <div id="content">
+            <!-- メインコンテンツ - サイドバー -->
+            <div class="side">
+                <div id="lineNoInputForm">
+                    <form action="lineNoSerch" method="get">
+                        ラインNO<br>
+                        <input type="text">
+                        <div id="serchButton">
+                            <button type="submit" class="commonBtn serch">検索</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- メインコンテンツ - メイン画面 -->
+            <div class="main">
+
+                <!--戻るボタン-->
+                <div id="backButton">
+                    <button type="button" class="btn back">⬅戻る</button>
+                </div>
+
+                <!-- 変更・削除マスタテーブル -->
+                <div id="ChangeTable">
+                    <b>変更・削除</b>
+                    <div class="masterTable">
+                        <table>
+                            <thead>
+                                <tr class="masterTableTitle">
+                                    <th>ラインNO</th>
+                                    <th>ラインNO(表示)</th>
+                                    <th>車種</th>
+                                    <th>ロケーション</th>
+                                    <th class="requiredTimeTable-1">時間帯必要数①
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-2">時間帯必要数②
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-3">時間帯必要数③
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-4">時間帯必要数④
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-5">時間帯必要数⑤
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-6">時間帯必要数⑥
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-7">時間帯必要数⑦
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-8">時間帯必要数⑧
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-9">時間帯必要数⑨
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-10">時間帯必要数⑩
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-11">時間帯必要数⑪
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th>必要人工</th>
+                                    <th>編成人工</th>
+                                    <th>月度オーダー</th>
+                                    <th>日当必要台数</th>
+                                    <th>実行タクトタイム</th>
+                                    <th>前作業能率</th>
+                                    <th>３人</th>
+                                    <th>４人</th>
+                                    <th>５人</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="changeAndDeleteButton">
+                        <!-- 変更ボタン -->
+                        <div id="changeButton">
+                            <label for="trigger" class="btn change">変更</label>
+                        </div>
+                        <!-- 削除ボタン -->
+                        <div id="deleteButton">
+                            <label for="trigger" class="btn delete">削除</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 追加マスタテーブル -->
+                <div id="UpdateTable">
+                    <b>追加</b>
+                    <div class="masterTable">
+                        <table>
+                            <thead>
+                                <tr class="masterTableTitle">
+                                    <th>ラインNO</th>
+                                    <th>ラインNO(表示)</th>
+                                    <th>車種</th>
+                                    <th>ロケーション</th>
+                                    <th class="requiredTimeTable-1">時間帯必要数①
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-2">時間帯必要数②
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-3">時間帯必要数③
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-4">時間帯必要数④
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-5">時間帯必要数⑤
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-6">時間帯必要数⑥
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-7">時間帯必要数⑦
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-8">時間帯必要数⑧
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-9">時間帯必要数⑨
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-10">時間帯必要数⑩
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th class="requiredTimeTable-11">時間帯必要数⑪
+                        <button type="button" class="btn timeTableReflect">➜</button></th>
+                                    <th>必要人工</th>
+                                    <th>編成人工</th>
+                                    <th>月度オーダー</th>
+                                    <th>日当必要台数</th>
+                                    <th>実行タクトタイム</th>
+                                    <th>前作業能率</th>
+                                    <th>３人</th>
+                                    <th>４人</th>
+                                    <th>５人</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="masterTableValue">
+                                    <td class="lineNo">
+                                        <input type="text"></td>
+                                    <td class="lineNoDisplay">
+                                        <input type="text"></td>
+                                    <td class="model">
+                                        <input type="text"></td>
+                                    <td class="location">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-1">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-2">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-3">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-4">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-5">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-6">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-7">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-8">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-9">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-10">
+                                        <input type="text"></td>
+                                    <td class="requiredTimeTable-11">
+                                        <input type="text"></td>
+                                    <td class="needArtificial">
+                                        <input type="text"></td>
+                                    <td class="organizationArtificial">
+                                        <input type="text"></td>
+                                    <td class="monthOrder">
+                                        <input type="text"></td>
+                                    <td class="dailyNeedNumber">
+                                        <input type="text"></td>
+                                    <td class="executeTactTime">
+                                        <input type="text"></td>
+                                    <td class="previousWorkEfficiency">
+                                        <input type="text"></td>
+                                    <td class="weightedAverage-3">
+                                        <input type="text"></td>
+                                    <td class="weightedAverage-4">
+                                        <input type="text"></td>
+                                    <td class="weightedAverage-5">
+                                        <input type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 追加ボタン -->
+                    <div id="addButton">
+                        <label for="trigger" class="btn add">追加</label>
+                    </div>
+                </div>
+
+                <!--メインボタン-->
+                <div id="mainButton">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
