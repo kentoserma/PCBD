@@ -24,6 +24,13 @@
 }
 
 /*----------------------------------------------------------------*/
+/* 追加(2019年10月16日) */
+.back:active {
+    transform: translateY(2px);
+    border-bottom: 0px solid #008080;
+}
+
+/*----------------------------------------------------------------*/
 /* 追加 */
 
 /*変更・削除ボタン*/
@@ -34,9 +41,22 @@
     margin-bottom: 20px;
 }
 
+
 #changeButton, #deleteButton {
     display: inline-block;
     margin: 10px;
+}
+
+/*----------------------------------------------------------------*/
+/* 追加(2019年10月16日) */
+#changeButton:active {
+    transform: translateY(2px);
+    border-bottom: 0px solid #008080;
+}
+
+#deleteButton:active {
+    transform: translateY(2px);
+    border-bottom: 0px solid #008080;
 }
 
     #changeButton label, #deleteButton label {
@@ -51,6 +71,7 @@
     font-size: 30px;
     margin: 2px;
 }
+
 /*ボタンデザイン共通*/
 .btn {
     display: table-cell;
@@ -189,4 +210,11 @@
         width: 100px;
         height: 50px;
         font-size: 20px;
+    }
+
+    /*----------------------------------------------------------------*/
+    /* 追加(2019年10月16日) */
+    #addButton label:active {
+        transform: translateY(2px);
+        border-bottom: 0px solid #008080;
     }
