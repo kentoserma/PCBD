@@ -8,6 +8,13 @@ $(function () {
     //時間帯必要数に応じて算出
     $(".timeTableReflect").click(function () {
         try {
+            //日当必要台数の値を取得し、空白ならエラー表示し処理を終了する
+            var beforeValue = document.getElementById("dailyNeedNumberContent").value;
+              if(beforeValue == ""){
+                  alert("日当必要台数が未入力です。");
+                  return false;
+              }
+
             //現在のテーブル項目のクラス名を取得
             var classColumnName = $(this).parent().attr("class");
 
