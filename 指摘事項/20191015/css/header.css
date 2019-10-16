@@ -1,0 +1,42 @@
+﻿/*----------------------------------------------------------------*/
+/*ヘッダー                                                        */
+/*----------------------------------------------------------------*/
+
+header {
+    margin: 0; /* 余白の削除 */
+    padding: 0; /* 余白の削除 */
+    /*list-style: none;*/ /*li要素のボッチを削除*/
+    box-sizing: border-box; /*?おまじない?*/
+}
+
+header {
+    position: relative;
+    font-size: 12px; /*文字の大きさ*/
+    color: white; /*文字の色*/
+    line-height: 0; /*文字の余白を削除*/
+}
+
+    /* 会社ロゴ */
+    header img {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        transform: translate(-2%, -50%);
+        width: 200px; /*大きさを指定*/
+    }
+
+    /* 画面名 */
+    header h1 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* ログインユーザ */
+    header h2 {
+        position: absolute;
+        top: 20%;
+        right: 2%;
+        transform: translate(-2%, -50%);
+    }
