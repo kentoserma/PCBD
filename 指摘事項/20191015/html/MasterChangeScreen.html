@@ -19,6 +19,7 @@
     <script src="../js/masterTable.js" charset="utf-8"></script>
     <script src="../js/inputControl.js" charset="utf-8"></script>
     <script src="../js/button.js" charset="utf-8"></script>
+    <script src="../js/MasterInputLimit.js" charset="utf-8"></script>
     <!--<link rel="stylesheet" type="text/css" href="../css/common.css">-->
     <!--<link rel="stylesheet" type="text/css" href="../css/sideBar.css">-->
     <!--<link rel="stylesheet" type="text/css" href="../css/main.css">-->
@@ -151,53 +152,53 @@
                             <tbody>
                                 <tr class="masterTableValue">
                                     <td class="lineNo">
-                                        <input type="text"></td>
+                                        <input id="lineNoContent" type="text"></td>
                                     <td class="lineNoDisplay">
-                                        <input type="text"></td>
+                                        <input id="lineNoDisplayContent" type="text"></td>
                                     <td class="model">
-                                        <input type="text"></td>
+                                        <input id="modelContent" type="text"></td>
                                     <td class="location">
-                                        <input type="text"></td>
+                                        <input id="locationContent" type="text"></td>
                                     <td class="requiredTimeTable-1">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-1Content" type="text"></td>
                                     <td class="requiredTimeTable-2">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-2Content"type="text"></td>
                                     <td class="requiredTimeTable-3">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-3Content"type="text"></td>
                                     <td class="requiredTimeTable-4">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-4Content"type="text"></td>
                                     <td class="requiredTimeTable-5">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-5Content"type="text"></td>
                                     <td class="requiredTimeTable-6">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-6Content"type="text"></td>
                                     <td class="requiredTimeTable-7">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-7Content"type="text"></td>
                                     <td class="requiredTimeTable-8">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-8Content"type="text"></td>
                                     <td class="requiredTimeTable-9">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-9Content"type="text"></td>
                                     <td class="requiredTimeTable-10">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-10Content"type="text"></td>
                                     <td class="requiredTimeTable-11">
-                                        <input type="text"></td>
+                                        <input id="requiredTimeTable-11Content"type="text"></td>
                                     <td class="needArtificial">
-                                        <input type="text"></td>
+                                        <input id="needArtificialContent" type="text"></td>
                                     <td class="organizationArtificial">
-                                        <input type="text"></td>
+                                        <input id="organizationArtificialContent" type="text"></td>
                                     <td class="monthOrder">
-                                        <input type="text"></td>
+                                        <input id="monthOrderContent" type="text"></td>
                                     <td class="dailyNeedNumber">
                                         <input id="dailyNeedNumberContent" type="text"></td>
                                     <td class="executeTactTime">
-                                        <input type="text"></td>
+                                        <input id="executeTactTimeContent" type="text"></td>
                                     <td class="previousWorkEfficiency">
-                                        <input type="text"></td>
+                                        <input id="previousWorkEfficiencyContent" type="text"></td>
                                     <td class="weightedAverage-3">
-                                        <input type="text"></td>
+                                        <input id="weightedAverage-3Content" type="text"></td>
                                     <td class="weightedAverage-4">
-                                        <input type="text"></td>
+                                        <input id="weightedAverage-4Content" type="text"></td>
                                     <td class="weightedAverage-5">
-                                        <input type="text"></td>
+                                        <input id="weightedAverage-5Content" type="text"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -205,7 +206,7 @@
 
                     <!-- 追加ボタン -->
                     <div id="addButton">
-                        <label for="trigger" class="btn add">追加</label>
+                        <label for="trigger" class="btn add" onclick="return OnButtonClickAddMaster();">追加</label>
                     </div>
                 </div>
 
